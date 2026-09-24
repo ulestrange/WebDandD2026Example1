@@ -28,7 +28,7 @@ app.set('views',  'views');
 
 // where to find static files - css, images, js
 // this needs to be uncommented so that the css file can be found and used in the layout.hbs file
-//app.use(express.static('public'));
+app.use(express.static('public'));
 
 // home page or home route
 app.get('/', (req, res) => {
@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
 });
 
 // contact route
-app.get('/contact', (req, res) => {
+app.get('/getintouch', (req, res) => {
     state={contact : true}
     head={title:"Contact - Week 1"}
     res.render('contact', { state, head});

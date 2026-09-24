@@ -16,5 +16,50 @@ nav li {
     color :white;
     background-color:green;
     padding:0.5em;
-
 }
+
+
+
+p::first-letter  {
+font-size: 2em;
+color: rgb(0, 255, 183);
+font-weight: bold;
+}
+
+p::first-line {
+font-size: 2em;
+color: red;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(100, 0, 27);
+}
+
+p 
+{
+    color: blue;
+}
+
+.tip::before {
+content: "💡 ";
+}
+
+/* #introduction {
+    color: yellow;
+} */
+
+.bland {
+    color: brown;
+}
+
+
+/* Score: (0, 0, 1) */
+p { color: blue; }
+
+/* Score: (0, 1, 0) - WINS over 'p' because class > tag */
+.highlight { color: green; }
+
+/* Score: (0, 1, 1) - WINS over '.highlight' because class + tag > class alone */
+p.highlight { color: orange; }
